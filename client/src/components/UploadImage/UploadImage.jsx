@@ -19,8 +19,8 @@ const UploadImage = ({
     cloudinaryRef.current = window.cloudinary;
     widgetRef.current = cloudinaryRef.current.createUploadWidget(
       {
-        cloudName: "dcdhklrjc",
-        uploadPreset: "vx0dyjgc",
+        cloudName: "deuilch4g",
+        uploadPreset: "bugjijly",
         maxFiles: 1,
       },
       (err, result) => {
@@ -35,16 +35,14 @@ const UploadImage = ({
       {!imageURL ? (
         <div
           className="flexColCenter uploadZone"
-          onClick={() => widgetRef.current?.open()}
-        >
+          onClick={() => widgetRef.current?.open()}>
           <AiOutlineCloudUpload size={50} color="grey" />
           <span>Upload Image</span>
         </div>
       ) : (
         <div
           className="uploadedImage"
-          onClick={() => widgetRef.current?.open()}
-        >
+          onClick={() => widgetRef.current?.open()}>
           <img src={imageURL} alt="" />
         </div>
       )}

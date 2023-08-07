@@ -17,7 +17,6 @@ const Header = () => {
   const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
   const { validateLogin } = useAuthCheck();
 
-
   const handleAddPropertyClick = () => {
     if (validateLogin()) {
       setModalOpened(true);
@@ -35,16 +34,14 @@ const Header = () => {
         <OutsideClickHandler
           onOutsideClick={() => {
             setMenuOpened(false);
-          }}
-        >
+          }}>
           <div
             // ref={menuRef}
             className="flexCenter h-menu"
-            style={getMenuStyles(menuOpened)}
-          >
+            style={getMenuStyles(menuOpened)}>
             <NavLink to="/properties">Properties</NavLink>
 
-            <a href="mailto:zainkeepscode@gmail.com">Contact</a>
+            <a href="mailto:dungnguyen_2025@depauw.edu">Contact</a>
 
             {/* add property */}
             <div onClick={handleAddPropertyClick}>Add Property</div>
@@ -63,8 +60,7 @@ const Header = () => {
         {/* for medium and small screens */}
         <div
           className="menu-icon"
-          onClick={() => setMenuOpened((prev) => !prev)}
-        >
+          onClick={() => setMenuOpened((prev) => !prev)}>
           <BiMenuAltRight size={30} />
         </div>
       </div>
