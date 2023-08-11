@@ -9,13 +9,15 @@ const Footer = () => {
           <img src="./logo2.png" alt="" width={120} />
           <span className="secondaryText">
             Our vision is to make all people <br />
-            the best place to live for them.
+            the best place to stay for them.
           </span>
         </div>
 
         <div className="flexColStart f-right">
           <span className="primaryText">Information</span>
-          <span className="secondaryText">145 New York, FL 5467, USA</span>
+          <span className="secondaryText">
+            408 S Locust Street, Greencastle, IN 46135
+          </span>
           <div className="flexCenter f-menu">
             <span>Property</span>
             <span>Services</span>
